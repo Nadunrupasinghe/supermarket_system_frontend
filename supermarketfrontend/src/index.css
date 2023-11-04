@@ -1,12 +1,17 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+  font-family: 'Alexandria', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: black; */
-  background-color: linear-gradient(to top, #8e8c8c, #696767, #454545, #252525, #000000);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(254, 252, 252, 0.188));
+  background-color: black;
+  height: 100vh;
+  background-size: 100%; /* Adjust the blur height as needed */
+  background-position: top;
+  background-attachment: fixed;
 }
 
 code {
