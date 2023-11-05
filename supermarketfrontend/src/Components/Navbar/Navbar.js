@@ -4,6 +4,7 @@ import { FaShoppingCart, FaUser } from 'react-icons/fa';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FaSearch } from 'react-icons/fa';
 import Logo from "../../Assets/NavLogo.png";
+import { Link } from "react-router-dom";
 
 function Navbar(){
     return(
@@ -14,8 +15,12 @@ function Navbar(){
 
         <div className="menu">
           <ul>
+            <Link to="/">
               <li>HOME</li>
+              </Link>
+              <Link to="/productview">
               <li>SHOP NOW</li>
+              </Link>
               <li>PROMOTIONS</li>
               <li>CONTACT US</li>
           </ul>
