@@ -11,7 +11,7 @@ function SignUpPage() {
         <Navbar />
       </div>
       <div className='MidSection'>
-        <img className='img1' src={signupimage} />
+        <img className='image1' src={signupimage} />
         <div className='signup-container'>
           <div className='top-container'>
             <div className='txt'>
