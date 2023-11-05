@@ -1,4 +1,32 @@
 body{
+<<<<<<< HEAD
+  background-color: #0c0c0c;
+}
+.Landing{
+    background-color: black;
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(254, 252, 252, 0.212));
+    background-size: 100%; /* Adjust the blur height as needed */
+    background-position: top;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+/* .img {
+  background: linear-gradient(to top, #0c0c0c, #373737, #656465, #989697, #cecbcb);
+} */
+
+.img1{
+    flex-basis: 100%;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 520px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(252, 252, 252, 0.378)); */
+=======
     background-color: #0c0c0c;
   }
   .Landing{
@@ -12,6 +40,7 @@ body{
       overflow: hidden;
   }
   /* .img {
+>>>>>>> dev
     background: linear-gradient(to top, #0c0c0c, #373737, #656465, #989697, #cecbcb);
   } */
   
