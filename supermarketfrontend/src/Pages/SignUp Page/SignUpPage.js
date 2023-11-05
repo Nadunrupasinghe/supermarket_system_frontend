@@ -34,7 +34,7 @@ function SignUpPage() {
               <div className='container'>
                 <div className='left-container'>
                   <div className='signup-item'>
-                    <InputBox type='text' labelName='First Name' />
+                    <InputBox type='text' labelName='Name' />
                   </div>
                   <div className='signup-item'>
                     <InputBox type='text' labelName='Phone Number' />
@@ -45,10 +45,13 @@ function SignUpPage() {
                 </div>
                 <div className='right-container'>
                   <div className='signup-item'>
-                    <InputBox type='text' labelName='Last Name' />
+                    <InputBox type='text' labelName='Username' />
                   </div>
                   <div className='signup-item'>
                     <InputBox type='password' labelName='Password' />
+                  </div>
+                  <div className='signup-item'>
+                    <InputBox type='date' labelName='Date of Birth' />
                   </div>
                   <div className='signup-item'>
                     <InputBox type='password' labelName=' Confirm Password' />
