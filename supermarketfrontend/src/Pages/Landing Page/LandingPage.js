@@ -11,7 +11,7 @@ function LandingPage() {
       </div>
 
       <div className='MidSection'>
-        <img className='img1' src={landimg} />
+        <img className='imge' src={landimg} />
         <div className='text-overlay1'>One step closer to your doorstep</div>
         <div className='text-overlay2'>
           Fresh Harvest Grocery Your Food Paradise
