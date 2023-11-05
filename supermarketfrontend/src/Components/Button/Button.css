@@ -11,4 +11,5 @@
     cursor: pointer;
     background-color: #5FCE55;
     border-radius: 10px;
-  }
+    background: linear-gradient(to bottom, #256b1e, #50b646);
+  } 

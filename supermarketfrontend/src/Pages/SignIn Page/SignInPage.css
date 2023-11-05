@@ -1,4 +1,4 @@
-.SignUpPage{
+.SignInPage{
     background-color: black;
     position: relative;
     height: 100vh;
@@ -12,6 +12,7 @@
 .img1{
     flex-basis: 100%;
     margin: 0%;
+    margin-top: 20px;
     border-radius: 0%;
     align-items: center;
     justify-content: center;
@@ -21,37 +22,29 @@
     display: inline-block;
     /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(252, 252, 252, 0.378)); */
     background: linear-gradient(to top, #0c0c0c, #373737, #656465, #989697, #cecbcb);
-    filter:blur(5px);
-}
-.img1 ::before{
-  background: linear-gradient(to top, #0c0c0c, #373737, #656465, #989697, #cecbcb);
+    filter:blur(5px);   
 }
 
 .MidSection {
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column  ;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 100%;
-    
-  }
-
-.img1::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(101, 28, 28, 0.7));
+    width: 100%; 
 }
 
-.form-container {
+.line{
+    width:100%;
+    color:rgba(131, 254, 119, 1);
+}
+
+.signup-container {
     position: absolute;
-    display: gird;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(5, 1fr);
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
@@ -68,51 +61,50 @@
     
 }
 
-.signup-item{
-    width:50%;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.left-container{
-    flex-direction: column;
-    flex:1;
+.top-container{
+    flex: 1;
     flex-basis: 50%;
-    width:100%;
-    padding: 10px;
-    margin-left: 50px;
-    
-
 }
 
-.right-container{
-    flex:2;
-    padding: 10px;
-    width:100%;
-    margin-right: 50px;
+.text{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-basis: 100%;
 }
 
-.line{
-    width:100%;
+.text1{
+    flex-basis: 50%;
 }
 
-.form-group{
-    width:100%;
-    padding:2px;
-}
-
-.form-group label{
-    display:grid;
-}
-input{
-    width:100%;
-    height: 40px;
-    border-radius: 15px;
-    color:#989697
-}
-
-label{
-    font-size: small;
+.text2{
+    flex-basis: 50%;
+    color:rgba(131, 254, 119, 1);
 }
 
 
+.signin-form{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-content: center;
+}
+
+.signin-input1{
+    align-self: center;
+    padding: 20px;
+}
+
+.signin-input2{
+    align-self: center;
+    padding: 20px;
+}
+
+.forgot{
+    font-size:x-small;
+    color:rgba(95, 206, 85, 1);
+}
+
+.btn{
+    padding-top: 50px;
+}

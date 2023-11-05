@@ -1,0 +1,47 @@
+.inputBox {
+    display: grid;
+    
+  }
+
+  .labelname {
+    margin-left: 0.4rem;
+    text-align: left;
+    font-size: 22px;
+    font-style: normal;
+  }
+  .input{
+    width:400px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:rgba(248, 248, 248, 0.55);
+    color: black;
+    &:focus {
+        background-color:rgba(74, 252, 58, 0.2) ;        
+    } 
+    
+  }
+  .textarea {
+    width: 100%;
+    margin: 0.2rem;
+    border: 0;
+    font-size: 1rem;
+    outline: none;
+    color: rgb(1, 1, 1);
+    padding: 6px 8px;
+    border-radius: 8px;
+    background-color: rgba(248, 248, 248, 0.55);
+    font-family: inherit;
+    backdrop-filter: blur(14.5px);
+    -webkit-backdrop-filter: blur(14.5px);
+    transition: background-color 0.2s;
+    &:focus {
+      background-color:rgba(74, 252, 58, 0.2) ;
+      /* color: var(--contrastTextColor); */
+      
+    }   
+  }
+  .errorMessage {
+    margin-bottom: 1rem;
+    /* color: var(--danger); */
+  }
+  
