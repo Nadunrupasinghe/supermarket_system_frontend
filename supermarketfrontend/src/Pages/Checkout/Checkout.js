@@ -40,6 +40,7 @@ function Checkout() {
             </div>
           </div>
           <input type='radio' value='kdkdk' className='Credit' />
+          <input type='radio' value='kdkdk' className='Credit' />
           <Button type='submit' buttonName='Proceed to Checkout' />
         </div>
       </div>

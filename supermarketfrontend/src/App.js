@@ -22,7 +22,6 @@ function App() {
             <Route path='/orderstatus' element={<OrderStatus />} />
             <Route path='/signup' element={<SignUpPage />} />
             <Route path='/signin' element={<SignInPage />} />
-
             <Route path='/checkout' element={<Checkout />} />
           </Routes>
         </BrowserRouter>
