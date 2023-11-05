@@ -40,7 +40,7 @@
     color:rgba(131, 254, 119, 1);
 }
 
-.signup-container {
+.form-container {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -48,17 +48,14 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    color: white; /* Text color */
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 50px;
-    margin-bottom: 5%;
+    color: white; 
+    margin-left: 25%;
+    margin-top: 10%;
     font-weight: bolder;
     font-size:xx-large;
-    height: 70%;
-    width:80%;
-    border-radius: 20px;
-    
+    width:50%;
+    height: 50%;
+    border-radius: 20px;  
 }
 
 .top-container{
@@ -106,5 +103,5 @@
 }
 
 .btn{
-    padding-top: 50px;
+    padding-top: 5px;
 }
