@@ -40,7 +40,7 @@ function SignInPage() {
               <div className='forgot'>
                 <p className='pass'>Forgot Password?</p>
               </div>
-              <div className='btn'>
+              <div className='signInBtn'>
                 <Button value='Submit' buttonName='Sign In' />
               </div>
             </div>

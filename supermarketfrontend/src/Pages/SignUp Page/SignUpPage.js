@@ -12,55 +12,68 @@ function SignUpPage() {
       </div>
       <div className='MidSection'>
         <img className='img1' src={signupimage} />
-
         <div className='signup-container'>
-          <div className='left-container'>
-            <div className='signup-item'>
-              <p>Signup</p>
-              <hr className='line'></hr>
-            </div>
-            <div className='signup-item'>
-              <label htmlFor='firstName'>First Name</label>
-              <input type='text' id='firstName' name='firstName' />
-            </div>
-            <div className='signup-item'>
-              <label htmlFor='phoneNumber'>Phone Number</label>
-              <input type='text' id='phoneNumber' name='PhoneNumber' />
-            </div>
-            <div className='signup-item'>
-              <label htmlFor='email'>Email</label>
-              <input type='email' id='email' name='email' />
-            </div>
-            <div className='signup-item'>
-              <label htmlFor='dateOfBirth'>Date of Birth</label>
-              <input type='date' id='dateOfBirth' name='dateOfBirth' />
+          <div className='top-container'>
+            <div className='txt'>
+              <div className='txt1'>
+                Sign Up
+                <div>
+                  <hr className='line'></hr>
+                </div>
+              </div>
+              <div className='txt2'>
+                Sign In
+                <div>
+                  <hr className='line'></hr>
+                </div>
+              </div>
             </div>
           </div>
-          <div className='right-container'>
-            <div className='signup-item'>
-              <p>SignIn</p>
-              <hr className='line'></hr>
+
+          <form>
+            <div className='container'>
+              <div className='left-container'>
+                <div className='signup-item'>
+                  <InputBox type='text' labelName='First Name' />
+                </div>
+                <div className='signup-item'>
+                  <InputBox type='text' labelName='Phone Number' />
+                </div>
+                <div className='signup-item'>
+                  <InputBox type='email' labelName='Email Address' />
+                </div>
+              </div>
+              <div className='right-container'>
+                <div className='signup-item'>
+                  <InputBox type='text' labelName='Last Name' />
+                </div>
+                <div className='signup-item'>
+                  <InputBox type='password' labelName='Password' />
+                </div>
+                <div className='signup-item'>
+                  <InputBox type='password' labelName=' Confirm Password' />
+                </div>
+              </div>
             </div>
-            <div className='signup-item'>
-              <label htmlFor='lastName'>Last Name</label>
-              <input type='text' id='lastName' name='lastName' />
+            <div className='bottom'>
+              <div className='agreement'>
+                <p className='textagree'>
+                  By creating your account, you agree with our
+                </p>
+                <p className='textagreement'>
+                  <input
+                    type='checkbox'
+                    height={'20px'}
+                    className='checkboxbtn'
+                  />
+                  Terms & Conditions
+                </p>
+              </div>
+              <div>
+                <Button value='Submit' buttonName='Sign Up' />
+              </div>
             </div>
-            <div className='signup-item'>
-              <label htmlFor='password'>Password</label>
-              <input type='password' id='password' name='password' />
-            </div>
-            <div className='signup-item'>
-              <label htmlFor='confirmPassword'>Confrim Password</label>
-              <input
-                type='password'
-                id='pconfirmPassword'
-                name='confirmPassword'
-              />
-            </div>
-            <div className='signup-item'>
-              <Button type='submit' buttonName='Sign Up' />
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
