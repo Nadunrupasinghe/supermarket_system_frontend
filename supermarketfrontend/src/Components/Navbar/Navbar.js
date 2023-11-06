@@ -28,7 +28,7 @@ function Navbar(){
 
       <div className='rightsection'>
         <div className='searchbar'>
-      <input type="text" placeholder="Search..." />
+      <input type="text" placeholder="Search Product" />
       <FaSearch className="search-icon" />
       </div>
 

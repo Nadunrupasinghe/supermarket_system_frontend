@@ -8,6 +8,7 @@ import AddProduct from "./Pages/Add Product/AddProduct";
 import OrderStatus from "./Pages/Order Status/OrderStatus";
 import SignUpPage from './Pages/SignUp Page/SignUpPage';
 import SignInPage from './Pages/SignIn Page/SignInPage';
+import EditProduct from './Pages/Edit Product/EditProduct';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/orderstatus" element={<OrderStatus/>} />
             <Route path='/signup' element={<SignUpPage />} />
             <Route path='/signin' element={<SignInPage />} />
+            <Route path='/editproduct' element={<EditProduct />} />
 
 
 
