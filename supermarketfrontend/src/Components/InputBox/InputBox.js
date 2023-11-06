@@ -29,7 +29,6 @@ function InputBox(props) {
         />
       )}
       {/* <span className='errorMessage'>
-        {props.error !== '' && <FontAwesomeIcon icon={faCircleArrowUp} />}{' '}
         {props.error}
       </span> */}
     </div>

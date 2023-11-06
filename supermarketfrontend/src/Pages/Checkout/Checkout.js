@@ -49,14 +49,64 @@ function Checkout() {
               <hr className='d-line'></hr>
             </div>
           </div>
+
+          <div className='productDetails'>
+            <p>Product Name</p>
+            <p>Price</p>
+            <p>Quantity</p>
+          </div>
+          <div className='billDetails'>
+            <div className='items'>
+              <p>Item Count</p>
+              <p>{1}</p>
+            </div>
+            <hr className='i-line'></hr>
+            <div className='items'>
+              <p>Sub Total</p>
+              <p>Rs.150.00</p>
+            </div>
+            <hr className='i-line'></hr>
+            <div className='items'>
+              <p>Delivery Charges</p>
+              <p>Rs.300.00</p>
+            </div>
+            <hr className='i-line'></hr>
+            <div className='items'>
+              <p>Sub Total Discounts</p>
+              <p>{0}</p>
+            </div>
+            <hr className='i-line'></hr>
+            <div className='totalBill'>
+              <p>Grand Total</p>
+              <p>Rs.450.00</p>
+            </div>
+          </div>
           <div className='deliveryText'>
             Payment Method
             <div>
               <hr className='d-line'></hr>
             </div>
           </div>
-          <input type='radio' value='kdkdk' className='Credit' />
-          <input type='radio' value='kdkdk' className='Credit' />
+          <label className='label'>
+            <input
+              type='radio'
+              name='paymenttype'
+              value='cardpayment'
+              className='Credit'
+            />
+            Pay with Debit or Credit Card
+          </label>
+
+          <label className='label'>
+            <input
+              type='radio'
+              name='paymenttype'
+              value='COD'
+              className='Credit'
+            />
+            Cash on Delivery (COD)
+          </label>
+
           <Button type='submit' buttonName='Proceed to Checkout' />
         </div>
       </div>

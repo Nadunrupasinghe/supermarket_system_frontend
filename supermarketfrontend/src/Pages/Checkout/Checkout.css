@@ -29,11 +29,13 @@
 }
 
 .deliveryText{
-    font-size: larger;
+    font-size:xx-large;
     padding-top: 15px;
 }
 
 .d-line{
+    width:100%;
+    align-items: flex-start;
     border: 1px solid rgb(255, 255, 255);
 }
 
@@ -45,8 +47,7 @@
     padding-bottom: 20px;
 }
 
-.deliveryInput{
-}
+
 
 .inline{
     display: flex;
@@ -71,10 +72,70 @@
     background-color: black;
     border-radius: 20px;
     color:white;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     border: 1px solid rgb(255, 255, 255);
 }
 
-.Credit{
-    color:white;
+.productDetails{
+    display:inline-flex;
+    justify-content: space-between;
+    align-self: center;
+    width:80%;
+    height: 40px;
+    padding-inline: 15px;
+    /* margin-left: 10%; */
+    border-radius: 15px;
+    border: 2px solid rgba(95, 206, 85, 1);
+    
+}
+.billDetails{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    padding-inline: 15px;
+    height:auto;
+    border: 2px solid rgba(95, 206, 85, 1);
+    margin-top: 10px;
+    align-self: center;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0;
+}
+.i-line{
+    width:100%;
+    align-self: center;
+    border: 1px solid rgba(95, 206, 85, 1);
+    padding: 0;
+    margin: 0;
+}
+
+.totalBill{
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+    background-color: rgba(95, 206, 85, 1);
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 2%;
+}
+.totalBill p{
+    align-self: center;
+}
+
+
+.label{
+    margin-bottom: 15px;
+    font-size:small;
 }
