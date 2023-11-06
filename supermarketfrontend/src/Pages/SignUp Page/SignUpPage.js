@@ -3,6 +3,8 @@ import Button from '../../Components/Button/Button';
 import Navbar from '../../Components/Navbar/Navbar';
 import signupimage from '../../Assets/LandingPageIMG.png';
 import InputBox from '../../Components/InputBox/InputBox';
+import { Link } from "react-router-dom";
+
 
 function SignUpPage() {
   return (
@@ -22,7 +24,9 @@ function SignUpPage() {
                 </div>
               </div>
               <div className='txt2'>
+                {/* <Link to="/signin"> */}
                 Sign In
+                {/* </Link> */}
                 <div>
                   <hr className='line'></hr>
                 </div>
@@ -72,7 +76,7 @@ function SignUpPage() {
                     Terms & Conditions
                   </p>
                 </div>
-                <div>
+                <div className='btnsignup'>
                   <Button value='Submit' buttonName='Sign Up' />
                 </div>
               </div>
