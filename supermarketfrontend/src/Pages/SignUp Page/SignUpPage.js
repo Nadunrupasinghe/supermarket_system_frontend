@@ -1,0 +1,84 @@
+import './SignUpPage.css';
+import Button from '../../Components/Button/Button';
+import Navbar from '../../Components/Navbar/Navbar';
+import signupimage from '../../Assets/LandingPageIMG.png';
+import InputBox from '../../Components/InputBox/InputBox';
+
+function SignUpPage() {
+  return (
+    <div className='SignUpPage'>
+      <div className='TopSection'>
+        <Navbar />
+      </div>
+      <div className='MidSection'>
+        <img className='image1' src={signupimage} />
+        <div className='signup-container'>
+          <div className='top-container'>
+            <div className='txt'>
+              <div className='txt1'>
+                Sign Up
+                <div>
+                  <hr className='line'></hr>
+                </div>
+              </div>
+              <div className='txt2'>
+                Sign In
+                <div>
+                  <hr className='line'></hr>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <form>
+              <div className='container'>
+                <div className='left-container'>
+                  <div className='signup-item'>
+                    <InputBox type='text' labelName='First Name' />
+                  </div>
+                  <div className='signup-item'>
+                    <InputBox type='text' labelName='Phone Number' />
+                  </div>
+                  <div className='signup-item'>
+                    <InputBox type='email' labelName='Email Address' />
+                  </div>
+                </div>
+                <div className='right-container'>
+                  <div className='signup-item'>
+                    <InputBox type='text' labelName='Last Name' />
+                  </div>
+                  <div className='signup-item'>
+                    <InputBox type='password' labelName='Password' />
+                  </div>
+                  <div className='signup-item'>
+                    <InputBox type='password' labelName=' Confirm Password' />
+                  </div>
+                </div>
+              </div>
+              <div className='bottom'>
+                <div className='agreement'>
+                  <p className='textagree'>
+                    By creating your account, you agree with our
+                  </p>
+                  <p className='textagreement'>
+                    <input
+                      type='checkbox'
+                      height={'20px'}
+                      className='checkboxbtn'
+                    />
+                    Terms & Conditions
+                  </p>
+                </div>
+                <div>
+                  <Button value='Submit' buttonName='Sign Up' />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default SignUpPage;
