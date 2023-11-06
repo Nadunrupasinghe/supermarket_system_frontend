@@ -1,12 +1,13 @@
 .checkout{
     background-color: black;
     position: relative;
-    height: 100vh;
+    height: 150%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(254, 252, 252, 0.212));
     background-size: 100%; /* Adjust the blur height as needed */
     background-position: top;
     background-attachment: fixed;
     overflow: hidden;
+    padding-bottom: 20px;
 }
 .order-containr{
     display: flex;
@@ -41,7 +42,10 @@
     align-content: center;
     padding: 5px;
     margin-left: 5%;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
+}
+
+.deliveryInput{
 }
 
 .inline{

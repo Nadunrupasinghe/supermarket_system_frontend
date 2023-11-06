@@ -16,14 +16,30 @@ function Checkout() {
             </div>
           </div>
           <div className='inputs'>
-            <InputBox type='email' labelName='Email' />
-            <InputBox type='text' labelName='Name' />
-            <InputBox type='text' labelName='Phone Number' />
-            <InputBox type='text' labelName='Delivery Address' />
-            <InputBox type='text' labelName='City' />
-            <InputBox type='text' labelName='Postal Code' />
-            <InputBox type='date' labelName='Delivery Date' />
-            <InputBox type='time' labelName='Delivery Time' />
+            <div classname='deliveryInput'>
+              <InputBox type='email' labelName='Email' />
+            </div>
+            <div classname='deliveryInput'>
+              <InputBox type='text' labelName='Name' />
+            </div>
+            <div classname='deliveryInput'>
+              <InputBox type='text' labelName='Phone Number' />
+            </div>
+            <div classname='deliveryInput'>
+              <InputBox type='textarea' labelName='Delivery Address' />
+            </div>
+            <div classname='deliveryInput'>
+              <InputBox type='text' labelName='City' />
+            </div>
+            <div classname='deliveryInput'>
+              <InputBox type='text' labelName='Postal Code' />
+            </div>
+            <div classname='deliveryInput'>
+              <InputBox type='date' labelName='Delivery Date' />
+            </div>
+            <div classname='deliveryInput'>
+              <InputBox type='time' labelName='Delivery Time' />
+            </div>
           </div>
         </div>
         <div className='orderDetails'>
