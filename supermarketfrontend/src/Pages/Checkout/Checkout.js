@@ -2,6 +2,9 @@ import './Checkout.css';
 import Button from '../../Components/Button/Button';
 import Navbar from '../../Components/Navbar/Navbar';
 import InputBox from '../../Components/InputBox/InputBox';
+import OrderItem from '../../Components/OrderItem/OrderItem';
+import Strawberry from '../../Assets/Strawberry.png';
+import Vegetables from '../../Assets/Vegetables.png';
 
 function Checkout() {
   return (
@@ -50,11 +53,23 @@ function Checkout() {
             </div>
           </div>
 
-          <div className='productDetails'>
-            <p>Product Name</p>
-            <p>Price</p>
-            <p>Quantity</p>
-          </div>
+          <ul className='productDetails'>
+            <li>Product Name</li>
+            <li>Price</li>
+            <li>Quantity</li>
+          </ul>
+          <OrderItem
+            img={Strawberry}
+            name='Strawberry'
+            price='450.00/kg'
+            qty='2'
+          />
+          <OrderItem
+            img={Vegetables}
+            name='Cucumber'
+            price='1000.00/kg'
+            qty='0.5'
+          />
           <div className='billDetails'>
             <div className='items'>
               <p>Item Count</p>
