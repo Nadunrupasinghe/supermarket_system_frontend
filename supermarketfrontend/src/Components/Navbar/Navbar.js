@@ -40,8 +40,9 @@ function Navbar() {
           <Link to='/cart'>
             <FaShoppingCart />
           </Link>
-
-          <FaUser />
+          <Link to='/signup'>
+            <FaUser />
+          </Link>
         </div>
       </div>
     </div>
