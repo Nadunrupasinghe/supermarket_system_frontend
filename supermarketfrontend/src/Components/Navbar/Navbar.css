@@ -46,7 +46,7 @@
   }
 
 .menu li:hover{
-color: green;
+color: #5fce55;
 }
 
 .rightsection{
@@ -88,3 +88,7 @@ color: green;
     margin-left: 60px;
     gap: 20px;
   }
+
+a :hover{
+  color:#5fce55;
+}
