@@ -1,6 +1,6 @@
 .inputBox {
     display: grid;
-    
+    margin-bottom: 25px;
   }
 
   .labelname {
@@ -10,9 +10,9 @@
     font-style: normal;
   }
   .input{
-    width:400px;
+    width:90%;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 8px;
     background-color:rgba(248, 248, 248, 0.55);
     color: black;
     &:focus {
@@ -22,7 +22,7 @@
     
   }
   .textarea {
-    width: 100%;
+    width: 87%;
     margin: 0.2rem;
     border: 0;
     font-size: 1rem;

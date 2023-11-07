@@ -1,0 +1,33 @@
+.body{
+  margin: 5rem;
+}
+
+.tableHeader {
+  display: flex;
+  border: 0.2rem solid green;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  justify-content: space-around;
+  list-style-type: none;
+  color: white;
+}
+
+.footer {
+  display: flex;
+}
+
+.item1 {
+  flex: 0 0 80%;
+  display: flex;
+  border: 0.2rem solid green;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  justify-content: space-between;
+  list-style-type: none;
+  color: white;
+}
+
+.item2 {
+  flex: 0 0 20%;
+  align-self: center;
+}

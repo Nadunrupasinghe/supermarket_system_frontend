@@ -73,7 +73,7 @@ function SignUpPage() {
                     Terms & Conditions
                   </p>
                 </div>
-                <div>
+                <div className='btnsignup'>
                   <Button value='Submit' buttonName='Sign Up' />
                 </div>
               </div>
