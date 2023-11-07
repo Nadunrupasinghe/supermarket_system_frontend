@@ -1,16 +1,17 @@
-import React from "react";
-import "./Cart.css";
-import Navbar from "../../Components/Navbar/Navbar";
-import Button from "../../Components/Button/Button";
+import React from 'react';
+import './Cart.css';
+import Navbar from '../../Components/Navbar/Navbar';
+import Button from '../../Components/Button/Button';
 import cardImg1 from '../../Assets/Strawberry.png';
-import CartItem from '../../Components/CartItem/CartItem'
+import CartItem from '../../Components/CartItem/CartItem';
+import { Link } from 'react-router-dom';
 
 function Cart() {
   return (
     <div>
       <Navbar />
-      <div className="body">
-        <ul className="tableHeader">
+      <div className='body'>
+        <ul className='tableHeader'>
           <li>Product Name</li>
           <li>Price</li>
           <li>Qyt</li>
@@ -25,21 +26,20 @@ function Cart() {
           disscount='0'
           total='200'
         />
-        <div className="footer">
-          <ul className="item1">
+        <div className='footer'>
+          <ul className='item1'>
             <li>Grand Total</li>
             <li>Rs.800</li>
           </ul>
-          <div className="item2">
-            <Button
-              buttonName="Checkout"
-            />
+          <div className='item2'>
+            <Link to='/checkout'>
+              <Button buttonName='Checkout' />
+            </Link>
           </div>
-
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Cart;
