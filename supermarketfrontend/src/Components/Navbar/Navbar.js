@@ -9,16 +9,18 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <div className='Navbar'>
-      <div className='logo'>
-        <img className='logo-img' src={Logo} />
+
+      <div className="logo">
+        <img className="logo-img" src={Logo} />
       </div>
 
-      <div className='menu'>
+      <div className="menu">
         <ul>
-          <Link to='/'>
+          <Link to="/">
             <li>HOME</li>
           </Link>
-          <Link to='/productview'>
+          <Link to="/productview">
+
             <li>SHOP NOW</li>
           </Link>
           <li>PROMOTIONS</li>
@@ -28,21 +30,23 @@ function Navbar() {
 
       <div className='rightsection'>
         <div className='searchbar'>
-          <input
-            type='text'
-            placeholder='Search Product'
-            className='searchbox'
-          />
-          <FaSearch className='search-icon' />
+
+          <input type="text" placeholder="Search Product" />
+          <FaSearch className="search-icon" />
         </div>
 
         <div className='icons'>
-          <FaShoppingCart />
+          <Link to="/cart">
+            <FaShoppingCart />
+          </Link>
+
           <FaUser />
         </div>
       </div>
     </div>
   );
+
+
 }
 
 export default Navbar;

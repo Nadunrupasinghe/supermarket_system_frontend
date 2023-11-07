@@ -8,6 +8,7 @@ import OrderStatus from './Pages/Order Status/OrderStatus';
 import SignUpPage from './Pages/SignUp Page/SignUpPage';
 import SignInPage from './Pages/SignIn Page/SignInPage';
 import EditProduct from './Pages/Edit Product/EditProduct';
+import Cart from './Pages/Cart/Cart';
 
 import Checkout from './Pages/Checkout/Checkout';
 
@@ -25,6 +26,7 @@ function App() {
             <Route path='/signin' element={<SignInPage />} />
             <Route path='/editproduct' element={<EditProduct />} />
             <Route path='/checkout' element={<Checkout />} />
+            <Route path='/cart' element={<Cart />} />
 
 
 
