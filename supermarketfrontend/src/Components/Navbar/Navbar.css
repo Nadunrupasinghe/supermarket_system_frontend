@@ -68,6 +68,11 @@ color: green;
     border: none;
 }
 
+.searchbox{
+  border-radius: 10px;
+  padding: 2px;
+}
+
 .search-icon{
   color: white;
   cursor: pointer;

@@ -19,8 +19,8 @@ function InputBox(props) {
       )}
       {props.type === 'textarea' && (
         <textarea
-          rows='5'
-          cols='45'
+          rows='4'
+          cols='10'
           value={props.value}
           name={props.name}
           placeholder={props.placeholder}
@@ -29,7 +29,6 @@ function InputBox(props) {
         />
       )}
       {/* <span className='errorMessage'>
-        {props.error !== '' && <FontAwesomeIcon icon={faCircleArrowUp} />}{' '}
         {props.error}
       </span> */}
     </div>
