@@ -3,12 +3,13 @@ import './Navbar.css';
 import { FaShoppingCart, FaUser } from 'react-icons/fa';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FaSearch } from 'react-icons/fa';
-import Logo from "../../Assets/NavLogo.png";
-import { Link } from "react-router-dom";
+import Logo from '../../Assets/NavLogo.png';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
     <div className='Navbar'>
+
       <div className="logo">
         <img className="logo-img" src={Logo} />
       </div>
@@ -19,6 +20,7 @@ function Navbar() {
             <li>HOME</li>
           </Link>
           <Link to="/productview">
+
             <li>SHOP NOW</li>
           </Link>
           <li>PROMOTIONS</li>
@@ -28,6 +30,7 @@ function Navbar() {
 
       <div className='rightsection'>
         <div className='searchbar'>
+
           <input type="text" placeholder="Search Product" />
           <FaSearch className="search-icon" />
         </div>
@@ -36,12 +39,14 @@ function Navbar() {
           <Link to="/cart">
             <FaShoppingCart />
           </Link>
+
           <FaUser />
         </div>
       </div>
     </div>
-  )
+  );
+
 
 }
 
-export default Navbar
+export default Navbar;
