@@ -11,7 +11,7 @@ function SignInPage() {
         <Navbar />
       </div>
       <div className='MidSection'>
-        <img className='img1' src={signinimage} />
+        <img className='image2' src={signinimage} />
         <div className='form-container'>
           <div className='top-container'>
             <div className='text'>
