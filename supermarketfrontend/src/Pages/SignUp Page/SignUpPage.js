@@ -3,6 +3,7 @@ import Button from '../../Components/Button/Button';
 import Navbar from '../../Components/Navbar/Navbar';
 import signupimage from '../../Assets/LandingPageIMG.png';
 import InputBox from '../../Components/InputBox/InputBox';
+import { Link } from 'react-router-dom'; 
 
 function SignUpPage() {
   return (
@@ -15,14 +16,14 @@ function SignUpPage() {
         <div className='signup-container'>
           <div className='top-container'>
             <div className='txt'>
-              <div className='txt1'>
-                Sign Up
+              <div className='text1'>
+              <Link to="/signup"> Sign Up</Link>
                 <div>
                   <hr className='line'></hr>
                 </div>
               </div>
-              <div className='txt2'>
-                Sign In
+              <div className='text2'>
+              <Link to="/signin">Sign In</Link>
                 <div>
                   <hr className='line'></hr>
                 </div>
