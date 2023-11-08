@@ -1,19 +1,19 @@
 import React from 'react';
 import './InputBox.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
+
 
 function InputBox(props) {
+  const [state, setState] = useState(0);
   return (
     <div className='inputBox'>
-      <div className='labelname'>{props.labelName}</div>
+      <label className='labelname'>{props.labelName}</label>
       {props.type !== 'textarea' && (
         <input
+     
           type={props.type}
-          value={props.value}
           name={props.name}
           placeholder={props.placeholder}
-          onChange={props.handleChange}
           className='input'
         />
       )}
@@ -24,13 +24,12 @@ function InputBox(props) {
           value={props.value}
           name={props.name}
           placeholder={props.placeholder}
-          onChange={props.handleChange}
           className='textarea'
         />
       )}
-      {/* <span className='errorMessage'>
+      <span className='errorMessage'>
         {props.error}
-      </span> */}
+      </span>
     </div>
   );
 }
