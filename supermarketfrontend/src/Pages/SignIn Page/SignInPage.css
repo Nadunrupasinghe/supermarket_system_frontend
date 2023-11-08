@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 .SignInPage{
     background-color: black;
     position: relative;
@@ -54,8 +55,9 @@
     font-weight: bolder;
     font-size:xx-large;
     width:60%;
-    height: 55%;
+    height: 60%;
     border-radius: 20px;  
+    padding-bottom: 10px;
 }
 
 .top-container{
@@ -74,12 +76,27 @@
 .text1{
     flex-basis: 50%;
     color:white;
+ 
 }
+.text1 a{
+    text-decoration: none;
+}
+.text1 a:visited {
+    color: rgb(255, 255, 255);
+    /* Set the same color for visited links to maintain consistency */
+  }
 
 .text2{
     flex-basis: 50%;
     color:rgba(131, 254, 119, 1);
+    text-decoration: none;
 }
+.text2 a{
+    text-decoration: none;
+}
+.text2 a:visited {
+    color: rgba(131, 254, 119, 1);; /* Set the same color for visited links to maintain consistency */
+  }
 
 
 .signin-form{
@@ -108,3 +125,29 @@
     padding-top: 5px;
     padding-bottom: 35px;
 }
+
+@media (max-width: 768px) {
+    .MidSection {
+      flex-direction: column;
+      align-items: center;
+    }
+    .form-container {
+      width: 80%; /* Adjust the width for smaller screens */
+      height: auto;
+    }
+    .image2 {
+      max-height: 40vh; /* Adjust the image height for smaller screens */
+      width: auto;
+    }
+  }
+  .error-message {
+    color: red;
+    font-size: 12px;
+    
+  }
+  .inputlabel{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+  }

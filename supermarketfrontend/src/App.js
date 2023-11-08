@@ -9,8 +9,8 @@ import SignUpPage from './Pages/SignUp Page/SignUpPage';
 import SignInPage from './Pages/SignIn Page/SignInPage';
 import EditProduct from './Pages/Edit Product/EditProduct';
 import Cart from './Pages/Cart/Cart';
-
 import Checkout from './Pages/Checkout/Checkout';
+import ProductCategory from './Pages/View Product Category/ProductCategory';
 
 function App() {
   return (
@@ -27,9 +27,7 @@ function App() {
             <Route path='/editproduct' element={<EditProduct />} />
             <Route path='/checkout' element={<Checkout />} />
             <Route path='/cart' element={<Cart />} />
-
-
-
+            <Route path='/productcategory' element={<ProductCategory />} />
           </Routes>
         </BrowserRouter>
       }
