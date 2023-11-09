@@ -1,0 +1,34 @@
+.productaddCard{
+    background-color: rgba(0, 0, 0, 0.34);
+    border-color: white;
+    border: 3px solid white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    box-shadow: 0 4px 2px -2px lightblue;
+    margin-left: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+/* .productaddCard img{
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-self: center;
+    margin-top: 15px;
+} */
+
+.prodAddImage{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-self: center;
+    margin-top: 15px;
+}
+
+.productaddCard text{
+    font-size: 17px;
+    color:white;
+    margin-top: auto;
+}

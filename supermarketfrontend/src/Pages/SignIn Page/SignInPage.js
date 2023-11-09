@@ -65,21 +65,21 @@ function SignInPage() {
       <div className='TopSection'>
         <Navbar />
       </div>
-      <div className='MidSection'>
-        <img className='image2' src={signinimage} />
-        <div className='form-container'>
-          <div className='top-container'>
-            <div className='text'>
-              <div className='text1'>
+      <div className='signin-MidSection'>
+        <img className='signin-image2' src={signinimage} />
+        <div className='signin-form-container'>
+          <div className='signin-top-container'>
+            <div className='signin-text'>
+              <div className='signin-text1'>
                 <Link to="/signin">Sign In</Link>
                 <div>
-                  <hr className='line'></hr>
+                  <hr className='signin-line'></hr>
                 </div>
               </div>
-              <div className='text2'>
+              <div className='signin-text2'>
                 <Link to="/signup"> Sign Up</Link>
                 <div>
-                  <hr className='line'></hr>
+                  <hr className='signin-line'></hr>
                 </div>
               </div>
             </div>
@@ -87,7 +87,7 @@ function SignInPage() {
           <form onSubmit={submit}>
             <div className="signin-form">
               <div className="signin-input1">
-                <label className='inputlabel'>Email Address</label>
+                <label className='signin-inputlabel'>Email Address</label>
                 <TextInputBox
                   type="email"
                   name="email"
@@ -101,7 +101,7 @@ function SignInPage() {
                 )}
               </div>
               <div className="signin-input2">
-                <label className='inputlabel'>Password</label>
+                <label className='signin-inputlabel'>Password</label>
                 <TextInputBox
                   type="password"
                   name="password"
@@ -114,10 +114,10 @@ function SignInPage() {
                   <div className="error-message">{formik.errors.password}</div>
                 )}
               </div>
-              <div className="forgot">
+              <div className="signin-forgot">
                 <p className="pass">Forgot Password?</p>
               </div>
-              <div className="signInBtn">
+              <div className="signin-btn">
                 <Button type="submit" value="Submit" buttonName="Sign In"   />
               </div>
             </div>
