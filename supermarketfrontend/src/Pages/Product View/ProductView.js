@@ -16,7 +16,7 @@ import cardImg10 from '../../Assets/BabyProducts.jpg';
 
 function ProductView(){
     return(
-        <div>
+        <div className='productView'>
             <Navbar />
             <h2 className='productViewText'>Shop by Category</h2>
             <div className='cardsection'>

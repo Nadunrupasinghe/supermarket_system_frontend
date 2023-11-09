@@ -3,8 +3,7 @@ import Button from '../../Components/Button/Button';
 import Navbar from '../../Components/Navbar/Navbar';
 import signupimage from '../../Assets/LandingPageIMG.png';
 import InputBox from '../../Components/InputBox/InputBox';
-import { Link } from "react-router-dom";
-
+import { Link } from 'react-router-dom'; 
 
 function SignUpPage() {
   return (
@@ -15,20 +14,18 @@ function SignUpPage() {
       <div className='MidSection'>
         <img className='image1' src={signupimage} />
         <div className='signup-container'>
-          <div className='top-container'>
-            <div className='txt'>
-              <div className='txt1'>
-                Sign Up
+          <div className='signup-top-container'>
+            <div className='signup-txt'>
+              <div className='SIGN1'>
+              <Link to="/signup"> Sign Up</Link>
                 <div>
-                  <hr className='line'></hr>
+                  <hr className='s-line1'></hr>
                 </div>
               </div>
-              <div className='txt2'>
-                {/* <Link to="/signin"> */}
-                Sign In
-                {/* </Link> */}
+              <div className='SIGN2'>
+              <Link to="/signin">Sign In</Link>
                 <div>
-                  <hr className='line'></hr>
+                  <hr className='s-line2'></hr>
                 </div>
               </div>
             </div>
@@ -54,9 +51,9 @@ function SignUpPage() {
                   <div className='signup-item'>
                     <InputBox type='password' labelName='Password' />
                   </div>
-                  <div className='signup-item'>
+                  {/* <div className='signup-item'>
                     <InputBox type='date' labelName='Date of Birth' />
-                  </div>
+                  </div> */}
                   <div className='signup-item'>
                     <InputBox type='password' labelName=' Confirm Password' />
                   </div>
