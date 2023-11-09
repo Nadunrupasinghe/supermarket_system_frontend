@@ -8,7 +8,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(254, 252, 252, 0.188));
   background-color: black;
-  height: 100vh;
+  height: auto;
+  overflow-y: scroll;
   background-size: 100%; /* Adjust the blur height as needed */
   background-position: top;
   background-attachment: fixed;
