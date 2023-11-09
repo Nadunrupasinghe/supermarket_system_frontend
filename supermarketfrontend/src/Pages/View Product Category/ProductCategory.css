@@ -1,0 +1,40 @@
+.categorySection{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.productCategory{
+    width:16%;
+    height:500px;
+    color: white;
+    background-color: black;
+    display: flex;
+    border-radius: 20px;
+    margin:50px;
+}
+
+.categorylist{
+    list-style-type: none;
+    text-align: left;
+    margin-left: -10px;
+}
+
+.categorylist li{
+    display: flex;
+    justify-content: space-between;
+    padding-top:20px ;
+    list-style-position: inside;
+    tab-size: 20px;
+    margin-left: 30px;
+}
+
+.proCard{
+    display: flex;
+    flex-direction: row;
+    width : 70%;
+    float: right;
+    margin:50px;
+    justify-content: center;
+    padding: 10px;
+}

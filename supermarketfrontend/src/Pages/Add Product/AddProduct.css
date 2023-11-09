@@ -1,12 +1,15 @@
-.addproductcontainer{
-    background-color: black;
-    height: 550px;
-    width: 1050px;
+.addproductcontainer {
+    background-color:rgb(11, 11, 11);
+    width: 100%; /* Set the width to a percentage of the parent container */
+    max-width: 1050px; 
+    height:800px;
     border-radius: 10px;
     display: flex;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
     flex-direction: column;
     overflow: hidden;
 }
@@ -20,7 +23,7 @@
     height: 20px;
 }
 
-.line{
+.boxbar{
     background-color: white;
     height: 1px;
     width: 1050px;
@@ -48,6 +51,12 @@
     margin-left: 40px;
     flex-direction: column;
 }
+.leftform{
+    display: flex;
+    float: right;
+    margin-left: 40px;
+    flex-direction: column;
+}
 
 .secondbox{
     margin-top: 100px;
@@ -62,6 +71,10 @@
 }
 
 .addprdctbtn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.addImageButton {
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -84,6 +97,7 @@
     justify-content: center;
 }
 
+
 .dropdownaddproduct{
     outline: 0;
     border-width: 0 0 1px;  
@@ -94,12 +108,15 @@
     background-color: rgba(248, 248, 248, 0.55);
     &:focus {
         background-color:rgba(74, 252, 58, 0.2) ;    
-        color: white;    
+        color: rgb(255, 255, 255);    
     }
     margin-top: -19px;
     color: black;
     font-weight: bold;
 }
+.dropdownaddproduct option {
+    color: rgb(8, 8, 8); /* Change this to your desired text color */
+  }
 
 .rightform h6{
     color: white;
