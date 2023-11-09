@@ -4,13 +4,13 @@
     position: relative;
     height: 100vh;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(254, 252, 252, 0.212));
-    background-size: 100% 100%; /* Adjust the blur height as needed */
+    background-size: 100%; /* Adjust the blur height as needed */
     background-position: top;
     background-attachment: fixed;
     overflow: hidden;
 }
 
-.image2{
+.signin-image2{
     flex-basis: 100%;
     margin: 0%;
     margin-top: 20px;
@@ -26,7 +26,7 @@
     filter:blur(5px);   
 }
 
-.MidSection {
+.signin-MidSection {
     position: relative;
     display: flex;
     flex-direction: column  ;
@@ -36,12 +36,12 @@
     width: 100%; 
 }
 
-.line{
+.signin-line{
     width:100%;
     color:rgba(131, 254, 119, 1);
 }
 
-.form-container {
+.signin-form-container {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -57,45 +57,46 @@
     width:60%;
     height: 60%;
     border-radius: 20px;  
-    padding-bottom: 10px;
+    padding-bottom: 2rem;
 }
 
-.top-container{
+.signin-top-container{
     flex: 1;
     flex-basis: 50%;
     padding-top: 10px;
 }
 
-.text{
+.signin-text{
     display: flex;
     flex-direction: row;
     text-align: center;
     flex-basis: 100%;
 }
 
-.text1{
+.signin-text1{
     flex-basis: 50%;
-    color:white;
+    color:rgba(131, 254, 119, 1);
+   
  
 }
-.text1 a{
+.signin-text1 a{
     text-decoration: none;
 }
-.text1 a:visited {
-    color: rgb(255, 255, 255);
+.signin-text1 a:visited {
+    color: rgba(131, 254, 119, 1);
     /* Set the same color for visited links to maintain consistency */
   }
 
-.text2{
+.signin-text2{
     flex-basis: 50%;
-    color:rgba(131, 254, 119, 1);
+    color:rgb(255, 255, 255);
     text-decoration: none;
 }
-.text2 a{
+.signin-text2 a{
     text-decoration: none;
 }
-.text2 a:visited {
-    color: rgba(131, 254, 119, 1);; /* Set the same color for visited links to maintain consistency */
+.signin-text2 a:visited {
+    color: rgb(255, 255, 255);; /* Set the same color for visited links to maintain consistency */
   }
 
 
@@ -116,36 +117,34 @@
     padding: 20px;
 }
 
-.forgot{
+.signin-forgot{
     font-size:x-small;
     color:rgba(95, 206, 85, 1);
 }
 
-.btn {
+.signin-btn {
     padding-top: 5px;
     padding-bottom: 35px;
+   
 }
 
 @media (max-width: 768px) {
-    .MidSection {
+    .signin-MidSection {
       flex-direction: column;
       align-items: center;
     }
-    .form-container {
+    .signin-form-container {
       width: 80%; /* Adjust the width for smaller screens */
       height: auto;
     }
-    .image2 {
-      max-height: 40vh; /* Adjust the image height for smaller screens */
-      width: auto;
-    }
+   
   }
   .error-message {
     color: red;
     font-size: 12px;
     
   }
-  .inputlabel{
+  .signin-inputlabel{
     color: white;
     font-size: 20px;
     text-align: left;
