@@ -2,6 +2,7 @@ import './LandingPage.css';
 import Button from '../../Components/Button/Button';
 import Navbar from '../../Components/Navbar/Navbar';
 import landimg from '../../Assets/LandingPageIMG.png';
+import { Link } from 'react-router-dom';
 
 function LandingPage() {
   return (
@@ -17,7 +18,9 @@ function LandingPage() {
           Fresh Harvest Grocery Your Food Paradise
         </div>
         <div className='btnLand'>
-          <Button buttonName='Buy Now' type='submit' />
+          <Link to='/signup'>
+            <Button buttonName='Buy Now' type='submit' />
+          </Link>
         </div>
       </div>
     </div>
