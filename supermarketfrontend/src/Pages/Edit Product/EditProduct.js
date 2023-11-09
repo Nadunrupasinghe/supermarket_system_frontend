@@ -1,8 +1,8 @@
-import React from "react";
-import "./EditProduct.css";
-import Navbar from "../../Components/Navbar/Navbar";
-import Button from "../../Components/Button/Button";
-import InputBox from "../../Components/Input Box Product/InputBoxProduct";
+import React from 'react';
+import './EditProduct.css';
+import Navbar from '../../Components/Navbar/Navbar';
+import Button from '../../Components/Button/Button';
+import InputBox from '../../Components/Input Box Product/InputBoxProduct';
 
 function EditProduct() {
   return (
@@ -15,7 +15,7 @@ function EditProduct() {
         <form className='formcontainer'>
           <div className='topform1'>
             <InputBox title='Product Name' />
-            <h6 style={{ fontWeight: 600, marginLeft: "-335px" }}>Category:</h6>
+            <h6 style={{ fontWeight: 600, marginLeft: '-335px' }}>Category:</h6>
 
             {/* <label>Select an option:</label> */}
             <select className='dropdownaddproduct'>
@@ -29,7 +29,7 @@ function EditProduct() {
           </div>
 
           <div className='editprdctbtn'>
-            <Button buttonName='Add Product' />
+            <Button buttonName='Save Changes' />
           </div>
         </form>
       </div>
