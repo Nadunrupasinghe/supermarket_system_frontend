@@ -3,7 +3,14 @@ import './ManageProductCard.css';
 import Button from '../Button/Button';
 import { Link } from 'react-router-dom';
 
+
+
 function ManageProductCard(props) {
+  const handleDelete = () => {
+    // Call the deleteProduct function passed as a prop with the product id
+    props.deleteProduct(props.id);
+  };
+
   return (
     <div className='manageProductCard'>
       <img src={props.image} className='manageProdImage' />

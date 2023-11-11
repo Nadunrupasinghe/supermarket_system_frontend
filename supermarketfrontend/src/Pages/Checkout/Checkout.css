@@ -46,6 +46,8 @@
     padding: 5px;
     margin-left: 5%;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -142,3 +144,4 @@
     margin-bottom: 15px;
     font-size:small;
 }
+
