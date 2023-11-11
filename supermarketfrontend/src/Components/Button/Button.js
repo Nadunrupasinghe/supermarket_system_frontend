@@ -1,16 +1,16 @@
-import React from 'react';
-import './Button.css';
+import React from "react";
+import "./Button.css";
 
 function Button(props) {
   return (
     <div>
-      <div className="customButton">
-        <button type={props.type} className="Button" >
+      <div className='customButton'>
+        <button type={props.type} className='Button'>
           {props.buttonName}
         </button>
-        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Button
+export default Button;

@@ -37,8 +37,8 @@ function AddProducts() {
     // Prepare the data to send to the Spring Boot backend
     console.log("hiiiii");
     const dataToSend = {
-      productID: formData.productID,
-      name: formData.productName,
+      skucode: formData.productID,
+      name: formData.name,
       price: formData.price,
       description: formData.description,
       category: formData.category,
@@ -48,23 +48,23 @@ function AddProducts() {
     console.log(dataToSend);
 
     // Make a POST request to your Spring Boot backend
-    // fetch("YOUR_BACKEND_API_ENDPOINT", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(dataToSend),
-    // })
-    //   .then((response) => {
-    //     if (response.status === 200) {
-    //       // Handle the success scenario (e.g., show a success message)
-    //     } else {
-    //       // Handle errors (e.g., show an error message)
-    //     }
-    //   })
-    //   .catch((error) => {
-    //     // Handle network errors
-    //   });
+    fetch("http://localhost:8000/api/product", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dataToSend),
+    })
+      .then((response) => {
+        if (response.status === 200) {
+          // Handle the success scenario (e.g., show a success message)
+        } else {
+          // Handle errors (e.g., show an error message)
+        }
+      })
+      .catch((error) => {
+        // Handle network errors
+      });
   };
   return (
     <div>
@@ -105,16 +105,18 @@ function AddProducts() {
                 onChange={handleInputChange}
               />
               {/* <InputBox title='Quantity (Kg or Units)' /> */}
-              <h2>Select Type:</h2>
+              <div className='selecttype'>
+                <h6>Select Type:</h6>
 
-              <select
-                name='type'
-                value={formData.selectedType}
-                onChange={handleSelectChange}
-              >
-                <option value='Grams'>Grams</option>
-                <option value='Units'>Units</option>
-              </select>
+                <select
+                  name='type'
+                  value={formData.selectedType}
+                  onChange={handleSelectChange}
+                >
+                  <option value='Grams'>Grams</option>
+                  <option value='Units'>Units</option>
+                </select>
+              </div>
               {/* <div className='ImageInputBox'>
                 <ImageBox title='Add Product Image'/>
                 <div className='addImageButton' />
@@ -124,8 +126,8 @@ function AddProducts() {
           </div>
           {/* <div className='bottomform'></div> */}
 
-          <div className='addprdctbtn'>
-            <Button buttonName='Add Product' onClick={handleSubmit} />
+          <div className='addprdctbtn' onClick={handleSubmit}>
+            <Button buttonName='Add Product' />
           </div>
         </form>
       </div>

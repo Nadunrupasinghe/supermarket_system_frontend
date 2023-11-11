@@ -123,3 +123,22 @@
     display: flex;
     font-size: 15px;
 }
+.selecttype select{
+    outline: 0;
+    border-width: 0 0 1px;  
+    width:25rem;
+    border-radius: 5px;
+    height: 32px;
+    float: left;
+    background-color: rgba(248, 248, 248, 0.55);
+    &:focus {
+        background-color:rgba(74, 252, 58, 0.2) ;    
+        color: rgb(14, 13, 13);    
+    }
+    margin-top: -19px;
+    color: black;
+    font-weight: bold;
+}
+.selecttype h6{
+    color: rgb(251, 250, 250);
+}
