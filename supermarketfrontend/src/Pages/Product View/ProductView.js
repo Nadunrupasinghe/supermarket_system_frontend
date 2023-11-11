@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './ProductView.css';
 import Navbar from '../../Components/Navbar/Navbar';
-import ProductViewCard from '../../Components/Product View Card/ProductViewCard';
+// import ProductViewCard from '../../Components/Product View Card/ProductViewCard';
 import Strawberry from '../../Assets/Strawberry.png';
 import ProductAddCard from '../../Components/ProductAddCard/ProductAddCard';
-import ManageProductCard from '../../Components/ManageProductCard/ManageProductCard';
+// import ManageProductCard from '../../Components/ManageProductCard/ManageProductCard';
 
 function ProductView() {
-  // const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
 
   // useEffect(() => {
-  //   // Fetch products from the API and update the state.
   //   getAllProducts();
+  // Fetch products from the API and update the state.
 
   //   const getAllProducts = async () => {
   //     try {
   //       // Replace 'apiEndpoint' with the actual URL of your API that serves product data.
-  //       const response = await fetch('localhost:8181/api/product');
+  //       const response = await fetch('http://localhost:8181/api/product/add');
   //       if (!response.ok) {
   //         throw new Error('Network response was not ok');
   //       }
@@ -28,6 +28,24 @@ function ProductView() {
   //     }
   //   };
   // }, []);
+
+  // const getCart = React.useCallback(async () => {
+  //   return fetch('http://localhost:8085/authenticate', {
+  //     method: 'GET',
+  //     headers: {},
+  //   })
+  //     .then((res) => res.json())
+  //     .then((res) => {
+  //       if (!res.cart) throw new Error('Malformed Response');
+  //       setCart(res.cart);
+  //     })
+  //     .catch((err) => console.log(err));
+  // }, []);
+
+  // useEffect(() => {
+  //   getCart();
+  // }, [getCart]);
+
   return (
     <div className='productView'>
       <Navbar />

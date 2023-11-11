@@ -27,8 +27,8 @@
     margin-top: 15px;
 }
 
-.productaddCard text{
+.productaddCard span{
     font-size: 17px;
     color:white;
-    margin-top: auto;
+    margin-top: 4px;
 }
