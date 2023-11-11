@@ -11,6 +11,8 @@ import EditProduct from './Pages/Edit Product/EditProduct';
 import Cart from './Pages/Cart/Cart';
 import Checkout from './Pages/Checkout/Checkout';
 import ProductCategory from './Pages/View Product Category/ProductCategory';
+import SupplierProductView from './Pages/SupplierProductView/SupplierProductView';
+import PastOrders from './Pages/Past Orders/PastOrders';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
             <Route path='/checkout' element={<Checkout />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/productcategory' element={<ProductCategory />} />
+            <Route path='/supplierproductview' element={<SupplierProductView />} />
+            <Route path='/pastorders' element={<PastOrders />} />
           </Routes>
         </BrowserRouter>
       }

@@ -40,9 +40,9 @@ function Checkout() {
             <div classname='deliveryInput'>
               <InputBox type='date' labelName='Delivery Date' />
             </div>
-            <div classname='deliveryInput'>
+            {/* <div classname='deliveryInput'>
               <InputBox type='time' labelName='Delivery Time' />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className='orderDetails'>

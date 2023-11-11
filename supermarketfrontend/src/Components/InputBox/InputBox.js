@@ -20,7 +20,7 @@ function InputBox(props) {
       {props.type === 'textarea' && (
         <textarea
           rows='4'
-          cols='10'
+          cols='40'
           value={props.value}
           name={props.name}
           placeholder={props.placeholder}
