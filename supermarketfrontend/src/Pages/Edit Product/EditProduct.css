@@ -1,0 +1,48 @@
+.editproductcontainer{
+    background-color: black;
+    height: 650px;
+    width: 1050px;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.toptext{
+    color: white;
+    font-size: larger;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+}
+
+.line{
+    background-color: white;
+    height: 1px;
+    width: 1050px;
+}
+
+.topform1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topform1 h6{
+    color: white;
+    display: flex;
+    font-size: 15px;
+    display: flex;
+    /* margin-left: 50px; */
+    /* margin-right: auto; */
+}
+
+.editprdctbtn{
+    margin-top: 40px;
+}

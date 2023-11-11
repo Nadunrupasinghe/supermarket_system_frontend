@@ -1,0 +1,44 @@
+.cartItemContainer {
+  /* display: flex; */
+  /* background-color: aqua; */
+  /* height: 20vh; */
+  margin-top: 2rem;
+  color: white;
+  border-bottom: 0.2rem solid green;
+  
+   
+}
+
+.cartItemList {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+
+.cartItemList li {
+  align-self: center;
+}
+
+.product {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-left: -4rem;
+}
+
+.productName {
+  padding-left: 1rem;
+}
+
+.cartImage {
+  height: 10vh;
+}
+
+.price {
+  margin-left: -3rem;
+}
+
+.qyt {
+  margin-left: -1rem;
+}

@@ -1,0 +1,24 @@
+.inputfield{
+    outline: 0;
+    border-width: 0 0 1px;  
+    width:25rem;
+    border-radius: 5px;
+    height: 30px;
+    float: left;
+    background-color: rgba(248, 248, 248, 0.55);
+    &:focus {
+        background-color:rgba(74, 252, 58, 0.2) ;    
+        color: white;    
+    }
+}
+
+.inputbox h6{
+    color: white;
+    display: flex;
+    font-size: 15px;
+}
+
+.inputbox{
+    gap: 30px;
+    background-color: black;
+}
